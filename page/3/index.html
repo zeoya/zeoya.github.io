@@ -563,7 +563,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://zeoya.github.io/2019/04/12/lintcode 在排序数组中找最接近的K个数/">
+    <link itemprop="mainEntityOfPage" href="http://zeoya.github.io/2019/04/12/lintcode 反转ASCII编码字符串/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="ZeoYa">
@@ -582,7 +582,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2019/04/12/lintcode 在排序数组中找最接近的K个数/" itemprop="url">'lintcode 在排序数组中找最接近的K个数'</a></h1>
+                <a class="post-title-link" href="/2019/04/12/lintcode 反转ASCII编码字符串/" itemprop="url">'lintcode 反转ASCII编码字符串'</a></h1>
         
 
         <div class="post-meta">
@@ -604,6 +604,28 @@
             
           </span>
 
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/algorithm/" itemprop="url" rel="index">
+                    <span itemprop="name">algorithm</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -634,14 +656,16 @@
       
         
           
-          描述给一个目标数 target, 一个非负整数 k, 一个按照升序排列的数组 A。在A中找与target最接近的k个整数。返回这k个数并按照与target的接近程度从小到大排序，如果接近程度相当，那么小的数排在前面。
-k是一个非负整数，并且总是小于已排序数组的长度。给定数组的长度是正整数, 不会超过 10^4数组中元素的绝对值不会超过 10^4
-样例样例 1:
-输入: A = [1, 2, 3],
+          描述给定一个由ascii编码的字符串（例如，“ABC”可以编码为“656667”），您需要编写一个将编码字符串作为输入并返回反转的解码字符串的函数。
+您可以假设答案字符串中只有大写字母。
+样例样例1
+输入： “7976766972”输出： “HELLO”样例2
+输入： “656667”输出： “CBA”
+思考不断对输入的字符串截取长度为2的字符串，，转为int，再转为char，从后往前构造新的字符
           ...
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2019/04/12/lintcode 在排序数组中找最接近的K个数/#more" rel="contents">
+            <a class="btn" href="/2019/04/12/lintcode 反转ASCII编码字符串/#more" rel="contents">
               Read more &raquo;
             </a>
           </div>
@@ -793,6 +817,138 @@ k是一个非负整数，并且总是小于已排序数组的长度。给定数�
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2019/04/12/lintcode 四数乘积问题/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+      <div>
+      
+      </div>
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://zeoya.github.io/2019/04/12/lintcode 在排序数组中找最接近的K个数/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="ZeoYa">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ZeoYa's Home">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/04/12/lintcode 在排序数组中找最接近的K个数/" itemprop="url">'lintcode 在排序数组中找最接近的K个数'</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-04-12T23:45:25+08:00">
+                2019-04-12
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          描述给一个目标数 target, 一个非负整数 k, 一个按照升序排列的数组 A。在A中找与target最接近的k个整数。返回这k个数并按照与target的接近程度从小到大排序，如果接近程度相当，那么小的数排在前面。
+k是一个非负整数，并且总是小于已排序数组的长度。给定数组的长度是正整数, 不会超过 10^4数组中元素的绝对值不会超过 10^4
+样例样例 1:
+输入: A = [1, 2, 3],
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/04/12/lintcode 在排序数组中找最接近的K个数/#more" rel="contents">
               Read more &raquo;
             </a>
           </div>
@@ -1001,7 +1157,7 @@ k是一个非负整数，并且总是小于已排序数组的长度。给定数�
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://zeoya.github.io/2019/04/12/lintcode 奇偶跳/">
+    <link itemprop="mainEntityOfPage" href="http://zeoya.github.io/2019/04/12/lintcode 带环链表/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="ZeoYa">
@@ -1020,7 +1176,7 @@ k是一个非负整数，并且总是小于已排序数组的长度。给定数�
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2019/04/12/lintcode 奇偶跳/" itemprop="url">'lintcode 奇偶跳'</a></h1>
+                <a class="post-title-link" href="/2019/04/12/lintcode 带环链表/" itemprop="url">'lintcode 带环链表'</a></h1>
         
 
         <div class="post-meta">
@@ -1094,13 +1250,15 @@ k是一个非负整数，并且总是小于已排序数组的长度。给定数�
       
         
           
-          描述给定一个整数数组A。从某一些起始索引，你可以做一系列的跳跃。其中的（第1，第3，第5 ……）跳跃称为奇数跳跃，（第2，第4，第6 ……）跳跃称为偶数跳跃。
-你可以从索引i 以下列方式跳转到索引 j（i &lt;j）：
-在奇数跳跃（即跳跃1,3,5，…）期间，跳转到索引j，使得A [i] &lt;= A [j]并且A [j]是可能的最小值。如果有多个这样的索引j，则只能跳转到最小的索引 j。 在
+          lintcode 带环链表描述给定一个链表，判断它是否有环。
+样例给出 -21-&gt;10-&gt;4-&gt;5, tail connects to node index 1，返回 true
+挑战不要使用额外空间
+思路快慢指针，如果有环，一定能在On时间内相遇。
+代码1234567891011121314151617181920212223242526272829303132/** * Def
           ...
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2019/04/12/lintcode 奇偶跳/#more" rel="contents">
+            <a class="btn" href="/2019/04/12/lintcode 带环链表/#more" rel="contents">
               Read more &raquo;
             </a>
           </div>
@@ -1308,7 +1466,7 @@ k是一个非负整数，并且总是小于已排序数组的长度。给定数�
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://zeoya.github.io/2019/04/12/lintcode 最长回文子串/">
+    <link itemprop="mainEntityOfPage" href="http://zeoya.github.io/2019/04/12/lintcode 奇偶跳/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="ZeoYa">
@@ -1327,7 +1485,7 @@ k是一个非负整数，并且总是小于已排序数组的长度。给定数�
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2019/04/12/lintcode 最长回文子串/" itemprop="url">'lintcode 最长回文子串'</a></h1>
+                <a class="post-title-link" href="/2019/04/12/lintcode 奇偶跳/" itemprop="url">'lintcode 奇偶跳'</a></h1>
         
 
         <div class="post-meta">
@@ -1401,15 +1559,13 @@ k是一个非负整数，并且总是小于已排序数组的长度。给定数�
       
         
           
-          描述给出一个字符串（假设长度最长为1000），求出它的最长回文子串，你可以假定只有一个满足条件的最长回文串。
-样例样例 1:
-输入:”abcdzdcab”输出:”cdzdc”样例 2:
-输入:”aba”输出:”aba”
-思考使用Manacher算法。在每个字符后面增加一个#号，使得所有的回文串都变成奇数长度，维护一个一维数组用来记录新的字符串中以每个字符为中心的回文串的长度/2 + 1，并且这个长
+          描述给定一个整数数组A。从某一些起始索引，你可以做一系列的跳跃。其中的（第1，第3，第5 ……）跳跃称为奇数跳跃，（第2，第4，第6 ……）跳跃称为偶数跳跃。
+你可以从索引i 以下列方式跳转到索引 j（i &lt;j）：
+在奇数跳跃（即跳跃1,3,5，…）期间，跳转到索引j，使得A [i] &lt;= A [j]并且A [j]是可能的最小值。如果有多个这样的索引j，则只能跳转到最小的索引 j。 在
           ...
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2019/04/12/lintcode 最长回文子串/#more" rel="contents">
+            <a class="btn" href="/2019/04/12/lintcode 奇偶跳/#more" rel="contents">
               Read more &raquo;
             </a>
           </div>
@@ -1463,7 +1619,7 @@ k是一个非负整数，并且总是小于已排序数组的长度。给定数�
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://zeoya.github.io/2019/04/12/lintcode 带环链表/">
+    <link itemprop="mainEntityOfPage" href="http://zeoya.github.io/2019/04/12/lintcode K个最近的点/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="ZeoYa">
@@ -1482,7 +1638,7 @@ k是一个非负整数，并且总是小于已排序数组的长度。给定数�
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2019/04/12/lintcode 带环链表/" itemprop="url">'lintcode 带环链表'</a></h1>
+                <a class="post-title-link" href="/2019/04/12/lintcode K个最近的点/" itemprop="url">'lintcode K个最近的点'</a></h1>
         
 
         <div class="post-meta">
@@ -1556,168 +1712,13 @@ k是一个非负整数，并且总是小于已排序数组的长度。给定数�
       
         
           
-          lintcode 带环链表描述给定一个链表，判断它是否有环。
-样例给出 -21-&gt;10-&gt;4-&gt;5, tail connects to node index 1，返回 true
-挑战不要使用额外空间
-思路快慢指针，如果有环，一定能在On时间内相遇。
-代码1234567891011121314151617181920212223242526272829303132/** * Def
+          描述给定一些 points 和一个 origin，从 points 中找到 k 个离 origin 最近的点。按照距离由小到大返回。如果两个点有相同距离，则按照x值来排序；若x值也相同，就再按照y值排序。
+样例例1:
+输入: points = [[4,6],[4,7],[4,4],[2,5],[1,1]], origin = [0, 0], k = 3输出: [[1,1],[2,5],[4,4]]
           ...
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2019/04/12/lintcode 带环链表/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-      <div>
-      
-      </div>
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://zeoya.github.io/2019/04/12/C++ vector的初始化/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="ZeoYa">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="ZeoYa's Home">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/04/12/C++ vector的初始化/" itemprop="url">'C++ vector的初始化'</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-04-12T23:45:25+08:00">
-                2019-04-12
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/C/" itemprop="url" rel="index">
-                    <span itemprop="name">C++</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          因为编算法的时候经常用的STL函数库的vector，每次初始化的时候都要搜一下，这次自己整理一下。
-一维数组的初始化1.  vector &lt; int &gt; v;这时候v的size为0，如果直接进行访问 v[i] 会报错。这里可以使用 v.resize(n)，或者v.resize(n, m) 来初始化前者是使用n个0来初始化，后者是使用n个m来初始化。
-2. vector &lt; int
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2019/04/12/C++ vector的初始化/#more" rel="contents">
+            <a class="btn" href="/2019/04/12/lintcode K个最近的点/#more" rel="contents">
               Read more &raquo;
             </a>
           </div>
@@ -1810,7 +1811,7 @@ k是一个非负整数，并且总是小于已排序数组的长度。给定数�
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">58</span>
+                  <span class="site-state-item-count">59</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
