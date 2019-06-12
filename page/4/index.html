@@ -259,7 +259,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://zeoya.github.io/2019/04/12/lintcode 奇偶跳/">
+    <link itemprop="mainEntityOfPage" href="http://zeoya.github.io/2019/04/12/lintcode 带环链表2/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="ZeoYa">
@@ -278,7 +278,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2019/04/12/lintcode 奇偶跳/" itemprop="url">'lintcode 奇偶跳'</a></h1>
+                <a class="post-title-link" href="/2019/04/12/lintcode 带环链表2/" itemprop="url">'lintcode 带环链表2'</a></h1>
         
 
         <div class="post-meta">
@@ -352,13 +352,14 @@
       
         
           
-          描述给定一个整数数组A。从某一些起始索引，你可以做一系列的跳跃。其中的（第1，第3，第5 ……）跳跃称为奇数跳跃，（第2，第4，第6 ……）跳跃称为偶数跳跃。
-你可以从索引i 以下列方式跳转到索引 j（i &lt;j）：
-在奇数跳跃（即跳跃1,3,5，…）期间，跳转到索引j，使得A [i] &lt;= A [j]并且A [j]是可能的最小值。如果有多个这样的索引j，则只能跳转到最小的索引 j。 在
+          lintcode 带环链表2描述给定一个链表，如果链表中存在环，则返回到链表中环的起始节点，如果没有环，返回null。
+样例给出-21-&gt;10-&gt;4-&gt;5，返回10解释：最后一个节点5指向下标为1的节点，也就是10，所以环的入口为10
+挑战不使用额外的空间
+思路和带环链表找环一样，使用快慢指针，当fast == slow的时候，就说明有环了。此时通过数学计算可以证明此时slow指
           ...
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2019/04/12/lintcode 奇偶跳/#more" rel="contents">
+            <a class="btn" href="/2019/04/12/lintcode 带环链表2/#more" rel="contents">
               Read more &raquo;
             </a>
           </div>
@@ -512,6 +513,159 @@
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2019/04/12/lintcode K个最近的点/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+      <div>
+      
+      </div>
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://zeoya.github.io/2019/04/12/C++ vector的初始化/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="ZeoYa">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ZeoYa's Home">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/04/12/C++ vector的初始化/" itemprop="url">'C++ vector的初始化'</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-04-12T23:45:25+08:00">
+                2019-04-12
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/C/" itemprop="url" rel="index">
+                    <span itemprop="name">C++</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          因为编算法的时候经常用的STL函数库的vector，每次初始化的时候都要搜一下，这次自己整理一下。
+一维数组的初始化1.  vector &lt; int &gt; v;这时候v的size为0，如果直接进行访问 v[i] 会报错。这里可以使用 v.resize(n)，或者v.resize(n, m) 来初始化前者是使用n个0来初始化，后者是使用n个m来初始化。
+2. vector &lt; int
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/04/12/C++ vector的初始化/#more" rel="contents">
               Read more &raquo;
             </a>
           </div>
@@ -1023,160 +1177,6 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://zeoya.github.io/2019/04/12/lintcode 最小分解/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="ZeoYa">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="ZeoYa's Home">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/04/12/lintcode 最小分解/" itemprop="url">'lintcode 最小分解'</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-04-12T23:45:25+08:00">
-                2019-04-12
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/algorithm/" itemprop="url" rel="index">
-                    <span itemprop="name">algorithm</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          lintcode 最小分解描述给定一个正整数a，找到最小的正整数b，它的每个数字相乘之后等于a。如果没有答案，或者答案不符合32位整数，则返回0
-样例给定 a = 48, 返回 68. 给定 a = 15, 返回 35.
-思路相当于因式分解，2~9依次尝试除即可
-12345678910111213141516171819202122232425class Solution &#123;public
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2019/04/12/lintcode 最小分解/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-      <div>
-      
-      </div>
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://zeoya.github.io/2019/04/12/lintcode 最短重复子数组/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1499,7 +1499,7 @@ LCA(
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://zeoya.github.io/2019/04/12/lintcode 染色问题/">
+    <link itemprop="mainEntityOfPage" href="http://zeoya.github.io/2019/04/12/lintcode 最小分解/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="ZeoYa">
@@ -1518,7 +1518,7 @@ LCA(
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2019/04/12/lintcode 染色问题/" itemprop="url">'lintcode 染色问题'</a></h1>
+                <a class="post-title-link" href="/2019/04/12/lintcode 最小分解/" itemprop="url">'lintcode 最小分解'</a></h1>
         
 
         <div class="post-meta">
@@ -1592,17 +1592,14 @@ LCA(
       
         
           
-          lintcode 染色问题描述有一个圆形，分成n个扇形，用m种颜色给每个扇形染色，相邻扇形颜色不能相同。求方案总数。
-不考虑对称性。
-由于这个数可能很大，因此只需返回方案数模1e9 + 7。
-1≤n≤1051  1≤n≤10​^5​​
-1≤m≤1051 1≤m≤10​5​^5
-样例给定n = 2，m = 3，返回6。
-解释：一个圆划分为 2 个扇形，用 3 种颜色上色方案有“黑红，黑白，白红，白黑
+          lintcode 最小分解描述给定一个正整数a，找到最小的正整数b，它的每个数字相乘之后等于a。如果没有答案，或者答案不符合32位整数，则返回0
+样例给定 a = 48, 返回 68. 给定 a = 15, 返回 35.
+思路相当于因式分解，2~9依次尝试除即可
+12345678910111213141516171819202122232425class Solution &#123;public
           ...
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2019/04/12/lintcode 染色问题/#more" rel="contents">
+            <a class="btn" href="/2019/04/12/lintcode 最小分解/#more" rel="contents">
               Read more &raquo;
             </a>
           </div>
@@ -1656,7 +1653,7 @@ LCA(
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://zeoya.github.io/2019/04/12/lintcode 最长回文子串/">
+    <link itemprop="mainEntityOfPage" href="http://zeoya.github.io/2019/04/12/lintcode 有效的括号序列/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="ZeoYa">
@@ -1675,7 +1672,7 @@ LCA(
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2019/04/12/lintcode 最长回文子串/" itemprop="url">'lintcode 最长回文子串'</a></h1>
+                <a class="post-title-link" href="/2019/04/12/lintcode 有效的括号序列/" itemprop="url">'lintcode 有效的括号序列'</a></h1>
         
 
         <div class="post-meta">
@@ -1749,15 +1746,17 @@ LCA(
       
         
           
-          描述给出一个字符串（假设长度最长为1000），求出它的最长回文子串，你可以假定只有一个满足条件的最长回文串。
-样例样例 1:
-输入:”abcdzdcab”输出:”cdzdc”样例 2:
-输入:”aba”输出:”aba”
-思考使用Manacher算法。在每个字符后面增加一个#号，使得所有的回文串都变成奇数长度，维护一个一维数组用来记录新的字符串中以每个字符为中心的回文串的长度/2 + 1，并且这个长
+          描述给定一个字符串所表示的括号序列，包含以下字符： ‘(‘, ‘)’, ‘{‘, ‘}’, ‘[‘ and ‘]’， 判定是否是有效的括号序列。
+括号必须依照 “()” 顺序表示， “()[]{}” 是有效的括号，但 “([)]” 则是无效的括号。
+样例样例 1：
+输入：”([)]”输出：False样例 2：
+输入：”()[]{}”输出：True
+挑战O(n)的时间，n 为括号的个数。
+思路遍历字
           ...
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2019/04/12/lintcode 最长回文子串/#more" rel="contents">
+            <a class="btn" href="/2019/04/12/lintcode 有效的括号序列/#more" rel="contents">
               Read more &raquo;
             </a>
           </div>

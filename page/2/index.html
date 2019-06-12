@@ -259,7 +259,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://zeoya.github.io/2019/04/12/lintcode 两数和的最接近值/">
+    <link itemprop="mainEntityOfPage" href="http://zeoya.github.io/2019/04/12/lintcode 两数之和/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="ZeoYa">
@@ -278,7 +278,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2019/04/12/lintcode 两数和的最接近值/" itemprop="url">'lintcode 两数和的最接近值'</a></h1>
+                <a class="post-title-link" href="/2019/04/12/lintcode 两数之和/" itemprop="url">'lintcode 两数之和'</a></h1>
         
 
         <div class="post-meta">
@@ -352,14 +352,14 @@
       
         
           
-          描述给定整数数组num，从中找到两个数字使得他们和最接近target，返回两数和与 target 的差的 绝对值。
-样例样例1
-输入: nums = [-1, 2, 1, -4] 并且 target = 4输出: 1解释:最小的差距是1，(4 - (2 + 1) = 1).样例2
-输入: nums = [-1, -1, -1, -4] 并且 target = 4输出: 6解释:最小的差距是6，(4
+          lintcode 两数之和描述给一个整数数组，找到两个数使得他们的和等于一个给定的数 target。
+你需要实现的函数twoSum需要返回这两个数的下标, 并且第一个下标小于第二个下标。注意这里下标的范围是 0 到 n-1。
+样例给出 numbers = [2, 7, 11, 15], target = 9, 返回 [0, 1].
+思路首先，最容易想到的就是对于第i个 从j = i + 1开始往后
           ...
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2019/04/12/lintcode 两数和的最接近值/#more" rel="contents">
+            <a class="btn" href="/2019/04/12/lintcode 两数之和/#more" rel="contents">
               Read more &raquo;
             </a>
           </div>
@@ -725,7 +725,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://zeoya.github.io/2019/04/12/lintcode 两数和-小于或等于目标值/">
+    <link itemprop="mainEntityOfPage" href="http://zeoya.github.io/2019/04/12/lintcode 丢鸡蛋/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="ZeoYa">
@@ -744,7 +744,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2019/04/12/lintcode 两数和-小于或等于目标值/" itemprop="url">'lintcode 两数和-小于或等于目标值'</a></h1>
+                <a class="post-title-link" href="/2019/04/12/lintcode 丢鸡蛋/" itemprop="url">'lintcode 丢鸡蛋'</a></h1>
         
 
         <div class="post-meta">
@@ -818,14 +818,14 @@
       
         
           
-          描述给定一个整数数组，找出这个数组中有多少对的和是小于或等于目标值。返回对数。
-样例例1:
-输入: nums = [2, 7, 11, 15], target = 24.输出: 5.解释:2 + 7 &lt; 242 + 11 &lt; 242 + 15 &lt; 247 + 11 &lt; 247 + 15 &lt; 25例2:
-输入: nums = [1], target = 1.输出: 0.
+          lintcode 丢鸡蛋描述楼有n层高，鸡蛋若从k层或以上扔，就会碎。从k层以下扔，就不会碎。
+现在给两个鸡蛋，用最少的扔的次数找到k。返回最坏情况下次数。
+样例对于n=10， 一种找k的初级方法是从1、2…k层不断找。但最坏情况下要扔10次。
+注意有两个鸡蛋可以使用，所以可以从4、7、9层扔。这样最坏就只需要4次(例如k=6时)。给出 n = 10, 返回 4.给出 n = 100, 返回14.
           ...
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2019/04/12/lintcode 两数和-小于或等于目标值/#more" rel="contents">
+            <a class="btn" href="/2019/04/12/lintcode 丢鸡蛋/#more" rel="contents">
               Read more &raquo;
             </a>
           </div>
@@ -1033,7 +1033,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://zeoya.github.io/2019/04/12/lintcode 不允许成对/">
+    <link itemprop="mainEntityOfPage" href="http://zeoya.github.io/2019/04/12/lintcode 下一个排列/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="ZeoYa">
@@ -1052,7 +1052,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2019/04/12/lintcode 不允许成对/" itemprop="url">'lintcode 不允许成对'</a></h1>
+                <a class="post-title-link" href="/2019/04/12/lintcode 下一个排列/" itemprop="url">'lintcode 下一个排列'</a></h1>
         
 
         <div class="post-meta">
@@ -1126,11 +1126,18 @@
       
         
           
-          描述你有一家专门经营没有相邻匹配字符的单词的精品店。鲍比，一个竞争对手，已经决定完全退出这个业务并且你买了他的库存，你的想法是修改他的词汇库存，使他们适合在你的商店出售。为此，你找到所有相邻的匹配字符对，并将其中一个字符替换为另一个字符对。确定必须替换的最小字符数，以生成一个畅销词。例如，你购买了 words = [“odd”,”boook”,”treak”]。在 “add” 中更改 ‘d’，在 
+          lintcode 下一个排列描述给定一个若干整数的排列，给出按正数大小进行字典序从小到大排序后的下一个排列。
+如果没有下一个排列，则输出字典序最小的序列。
+样例左边是原始排列，右边是对应的下一个排列。
+1,2,3 → 1,3,2
+3,2,1 → 1,2,3
+1,1,5 → 1,5,1
+挑战不允许使用额外的空间。
+思路从倒数第二个数开始，记为nums[i],从这个第i个数开始，往后所有的数，找到最靠
           ...
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2019/04/12/lintcode 不允许成对/#more" rel="contents">
+            <a class="btn" href="/2019/04/12/lintcode 下一个排列/#more" rel="contents">
               Read more &raquo;
             </a>
           </div>
@@ -1285,161 +1292,6 @@
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2019/04/12/lintcode 会议室/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-      <div>
-      
-      </div>
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://zeoya.github.io/2019/04/12/lintcode 具有最大平均数的子树/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="ZeoYa">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="ZeoYa's Home">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/04/12/lintcode 具有最大平均数的子树/" itemprop="url">'lintcode 具有最大平均数的子树'</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-04-12T23:45:25+08:00">
-                2019-04-12
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/algorithm/" itemprop="url" rel="index">
-                    <span itemprop="name">algorithm</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          描述给一棵二叉树，找到有最大平均值的子树。返回子树的根结点
-样例样例 1
-输入：     1   /   \ -5     11 / \   /  \1   2 4    -2输出：11(它是一个TreeNode)样例 2
-输入：     1   /   \ -5     11输出：11(它是一个TreeNode)
-思考使用一个函数来遍历这个二叉树。根据后根遍历的顺序遍历每个节点，用左右子树的和来
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2019/04/12/lintcode 具有最大平均数的子树/#more" rel="contents">
               Read more &raquo;
             </a>
           </div>
@@ -1648,7 +1500,7 @@ Answer: 2substrings: [“bac”, “cab”]
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://zeoya.github.io/2019/04/12/lintcode 下一个排列/">
+    <link itemprop="mainEntityOfPage" href="http://zeoya.github.io/2019/04/12/lintcode 删除排序数组中的重复数字/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="ZeoYa">
@@ -1667,7 +1519,7 @@ Answer: 2substrings: [“bac”, “cab”]
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2019/04/12/lintcode 下一个排列/" itemprop="url">'lintcode 下一个排列'</a></h1>
+                <a class="post-title-link" href="/2019/04/12/lintcode 删除排序数组中的重复数字/" itemprop="url">'lintcode 删除排序数组中的重复数字'</a></h1>
         
 
         <div class="post-meta">
@@ -1741,18 +1593,169 @@ Answer: 2substrings: [“bac”, “cab”]
       
         
           
-          lintcode 下一个排列描述给定一个若干整数的排列，给出按正数大小进行字典序从小到大排序后的下一个排列。
-如果没有下一个排列，则输出字典序最小的序列。
-样例左边是原始排列，右边是对应的下一个排列。
-1,2,3 → 1,3,2
-3,2,1 → 1,2,3
-1,1,5 → 1,5,1
-挑战不允许使用额外的空间。
-思路从倒数第二个数开始，记为nums[i],从这个第i个数开始，往后所有的数，找到最靠
+          lintcode 删除排序数组中的重复数字描述给定一个排序数组，在原数组中删除重复出现的数字，使得每个元素只出现一次，并且返回新的数组的长度。
+不要使用额外的数组空间，必须在原地没有额外空间的条件下完成。
+样例给出数组A =[1,1,2]，你的函数应该返回长度2，此时A=[1,2]。
+思路先说我的思路，删除重复的元素即可，使用vector的迭代器iterator123456789101112131
           ...
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2019/04/12/lintcode 下一个排列/#more" rel="contents">
+            <a class="btn" href="/2019/04/12/lintcode 删除排序数组中的重复数字/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+      <div>
+      
+      </div>
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://zeoya.github.io/2019/04/12/lintcode 具有最大平均数的子树/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="ZeoYa">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ZeoYa's Home">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/04/12/lintcode 具有最大平均数的子树/" itemprop="url">'lintcode 具有最大平均数的子树'</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-04-12T23:45:25+08:00">
+                2019-04-12
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/algorithm/" itemprop="url" rel="index">
+                    <span itemprop="name">algorithm</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          描述给一棵二叉树，找到有最大平均值的子树。返回子树的根结点
+样例样例 1
+输入：     1   /   \ -5     11 / \   /  \1   2 4    -2输出：11(它是一个TreeNode)样例 2
+输入：     1   /   \ -5     11输出：11(它是一个TreeNode)
+思考使用一个函数来遍历这个二叉树。根据后根遍历的顺序遍历每个节点，用左右子树的和来
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/04/12/lintcode 具有最大平均数的子树/#more" rel="contents">
               Read more &raquo;
             </a>
           </div>
