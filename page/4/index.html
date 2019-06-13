@@ -259,7 +259,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://zeoya.github.io/2019/04/12/lintcode 带环链表2/">
+    <link itemprop="mainEntityOfPage" href="http://zeoya.github.io/2019/04/12/lintcode 带环链表/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="ZeoYa">
@@ -278,7 +278,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2019/04/12/lintcode 带环链表2/" itemprop="url">'lintcode 带环链表2'</a></h1>
+                <a class="post-title-link" href="/2019/04/12/lintcode 带环链表/" itemprop="url">'lintcode 带环链表'</a></h1>
         
 
         <div class="post-meta">
@@ -352,167 +352,15 @@
       
         
           
-          lintcode 带环链表2描述给定一个链表，如果链表中存在环，则返回到链表中环的起始节点，如果没有环，返回null。
-样例给出-21-&gt;10-&gt;4-&gt;5，返回10解释：最后一个节点5指向下标为1的节点，也就是10，所以环的入口为10
-挑战不使用额外的空间
-思路和带环链表找环一样，使用快慢指针，当fast == slow的时候，就说明有环了。此时通过数学计算可以证明此时slow指
+          lintcode 带环链表描述给定一个链表，判断它是否有环。
+样例给出 -21-&gt;10-&gt;4-&gt;5, tail connects to node index 1，返回 true
+挑战不要使用额外空间
+思路快慢指针，如果有环，一定能在On时间内相遇。
+代码1234567891011121314151617181920212223242526272829303132/** * Def
           ...
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2019/04/12/lintcode 带环链表2/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-      <div>
-      
-      </div>
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://zeoya.github.io/2019/04/12/lintcode K个最近的点/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="ZeoYa">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="ZeoYa's Home">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/04/12/lintcode K个最近的点/" itemprop="url">'lintcode K个最近的点'</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-04-12T23:45:25+08:00">
-                2019-04-12
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/algorithm/" itemprop="url" rel="index">
-                    <span itemprop="name">algorithm</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          描述给定一些 points 和一个 origin，从 points 中找到 k 个离 origin 最近的点。按照距离由小到大返回。如果两个点有相同距离，则按照x值来排序；若x值也相同，就再按照y值排序。
-样例例1:
-输入: points = [[4,6],[4,7],[4,4],[2,5],[1,1]], origin = [0, 0], k = 3输出: [[1,1],[2,5],[4,4]]
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2019/04/12/lintcode K个最近的点/#more" rel="contents">
+            <a class="btn" href="/2019/04/12/lintcode 带环链表/#more" rel="contents">
               Read more &raquo;
             </a>
           </div>
@@ -719,7 +567,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://zeoya.github.io/2019/04/12/lintcode 打劫房屋2/">
+    <link itemprop="mainEntityOfPage" href="http://zeoya.github.io/2019/04/12/lintcode 奇偶跳/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="ZeoYa">
@@ -738,7 +586,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2019/04/12/lintcode 打劫房屋2/" itemprop="url">'lintcode 打劫房屋2'</a></h1>
+                <a class="post-title-link" href="/2019/04/12/lintcode 奇偶跳/" itemprop="url">'lintcode 奇偶跳'</a></h1>
         
 
         <div class="post-meta">
@@ -812,12 +660,13 @@
       
         
           
-          描述在上次打劫完一条街道之后，窃贼又发现了一个新的可以打劫的地方，但这次所有的房子围成了一个圈，这就意味着第一间房子和最后一间房子是挨着的。每个房子都存放着特定金额的钱。你面临的唯一约束条件是：相邻的房子装着相互联系的防盗系统，且 当相邻的两个房子同一天被打劫时，该系统会自动报警。
-给定一个非负整数列表，表示每个房子中存放的钱， 算一算，如果今晚去打劫，在不触动报警装置的情况下, 你最多可以得到多
+          描述给定一个整数数组A。从某一些起始索引，你可以做一系列的跳跃。其中的（第1，第3，第5 ……）跳跃称为奇数跳跃，（第2，第4，第6 ……）跳跃称为偶数跳跃。
+你可以从索引i 以下列方式跳转到索引 j（i &lt;j）：
+在奇数跳跃（即跳跃1,3,5，…）期间，跳转到索引j，使得A [i] &lt;= A [j]并且A [j]是可能的最小值。如果有多个这样的索引j，则只能跳转到最小的索引 j。 在
           ...
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2019/04/12/lintcode 打劫房屋2/#more" rel="contents">
+            <a class="btn" href="/2019/04/12/lintcode 奇偶跳/#more" rel="contents">
               Read more &raquo;
             </a>
           </div>
@@ -871,7 +720,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://zeoya.github.io/2019/04/12/lintcode 排列序号/">
+    <link itemprop="mainEntityOfPage" href="http://zeoya.github.io/2019/04/12/lintcode 打劫房屋/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="ZeoYa">
@@ -890,7 +739,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2019/04/12/lintcode 排列序号/" itemprop="url">'lintcode 排列序号'</a></h1>
+                <a class="post-title-link" href="/2019/04/12/lintcode 打劫房屋/" itemprop="url">'lintcode 打劫房屋'</a></h1>
         
 
         <div class="post-meta">
@@ -964,13 +813,14 @@
       
         
           
-          lintcode 排列序号描述给出一个不含重复数字的排列，求这些数字的所有排列按字典序排序后该排列的编号。其中，编号从1开始。
-样例例如，排列 [1,2,4] 是第 1 个排列。
-思路排列一共有n!种,最高位定下来之后一共是n个(n-1)!种排列,根据这种性质,可以通过查找低位比高位小的个数来计算当前位置.比如,1247的排列个数是4!个.寻找2174的位置.首选从最高位的2开始,后面比他小的只有
+          描述假设你是一个专业的窃贼，准备沿着一条街打劫房屋。每个房子都存放着特定金额的钱。你面临的唯一约束条件是：相邻的房子装着相互联系的防盗系统，且 当相邻的两个房子同一天被打劫时，该系统会自动报警。
+给定一个非负整数列表，表示每个房子中存放的钱， 算一算，如果今晚去打劫，在不触动报警装置的情况下, 你最多可以得到多少钱 。
+样例样例 1:
+输入: [3, 8, 4]输出: 8解释: 仅仅打劫第二个房子
           ...
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2019/04/12/lintcode 排列序号/#more" rel="contents">
+            <a class="btn" href="/2019/04/12/lintcode 打劫房屋/#more" rel="contents">
               Read more &raquo;
             </a>
           </div>
@@ -1177,7 +1027,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://zeoya.github.io/2019/04/12/lintcode 最短重复子数组/">
+    <link itemprop="mainEntityOfPage" href="http://zeoya.github.io/2019/04/12/lintcode 排列序号/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="ZeoYa">
@@ -1196,7 +1046,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2019/04/12/lintcode 最短重复子数组/" itemprop="url">'lintcode 最短重复子数组'</a></h1>
+                <a class="post-title-link" href="/2019/04/12/lintcode 排列序号/" itemprop="url">'lintcode 排列序号'</a></h1>
         
 
         <div class="post-meta">
@@ -1270,16 +1120,13 @@
       
         
           
-          描述给定一个数组，返回具有重复元素的最短子数组长度。
-如果数组没有具有重复元素的子数组，则返回 -1。0 &lt;= arr.length &lt;= 10^6
-样例样例 1：
-输入：[1,2,3,1,4,5,4,6,8]输出：3解释：具有重复元素的最短子数组是 [4,5,4]。样例 2：
-输入：[1,1]输出：2解释：具有重复元素的最短子数组是 [1,1]。
-思考使用一个map 记录一下每个元素
+          lintcode 排列序号描述给出一个不含重复数字的排列，求这些数字的所有排列按字典序排序后该排列的编号。其中，编号从1开始。
+样例例如，排列 [1,2,4] 是第 1 个排列。
+思路排列一共有n!种,最高位定下来之后一共是n个(n-1)!种排列,根据这种性质,可以通过查找低位比高位小的个数来计算当前位置.比如,1247的排列个数是4!个.寻找2174的位置.首选从最高位的2开始,后面比他小的只有
           ...
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2019/04/12/lintcode 最短重复子数组/#more" rel="contents">
+            <a class="btn" href="/2019/04/12/lintcode 排列序号/#more" rel="contents">
               Read more &raquo;
             </a>
           </div>
@@ -1446,6 +1293,162 @@ LCA(
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2019/04/12/lintcode 最近公共祖先/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+      <div>
+      
+      </div>
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://zeoya.github.io/2019/04/12/lintcode 最短重复子数组/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="ZeoYa">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ZeoYa's Home">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/04/12/lintcode 最短重复子数组/" itemprop="url">'lintcode 最短重复子数组'</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-04-12T23:45:25+08:00">
+                2019-04-12
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/algorithm/" itemprop="url" rel="index">
+                    <span itemprop="name">algorithm</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          描述给定一个数组，返回具有重复元素的最短子数组长度。
+如果数组没有具有重复元素的子数组，则返回 -1。0 &lt;= arr.length &lt;= 10^6
+样例样例 1：
+输入：[1,2,3,1,4,5,4,6,8]输出：3解释：具有重复元素的最短子数组是 [4,5,4]。样例 2：
+输入：[1,1]输出：2解释：具有重复元素的最短子数组是 [1,1]。
+思考使用一个map 记录一下每个元素
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/04/12/lintcode 最短重复子数组/#more" rel="contents">
               Read more &raquo;
             </a>
           </div>
@@ -1849,7 +1852,7 @@ LCA(
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">62</span>
+                  <span class="site-state-item-count">63</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -1871,7 +1874,7 @@ LCA(
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">10</span>
+                  <span class="site-state-item-count">11</span>
                   <span class="site-state-item-name">tags</span>
                 </a>
               </div>
