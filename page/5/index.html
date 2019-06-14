@@ -259,7 +259,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://zeoya.github.io/2019/04/12/lintcode 染色问题/">
+    <link itemprop="mainEntityOfPage" href="http://zeoya.github.io/2019/04/12/lintcode 最近公共祖先/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="ZeoYa">
@@ -278,7 +278,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2019/04/12/lintcode 染色问题/" itemprop="url">'lintcode 染色问题'</a></h1>
+                <a class="post-title-link" href="/2019/04/12/lintcode 最近公共祖先/" itemprop="url">'lintcode 最近公共祖先'</a></h1>
         
 
         <div class="post-meta">
@@ -352,325 +352,26 @@
       
         
           
-          lintcode 染色问题描述有一个圆形，分成n个扇形，用m种颜色给每个扇形染色，相邻扇形颜色不能相同。求方案总数。
-不考虑对称性。
-由于这个数可能很大，因此只需返回方案数模1e9 + 7。
-1≤n≤1051  1≤n≤10​^5​​
-1≤m≤1051 1≤m≤10​5​^5
-样例给定n = 2，m = 3，返回6。
-解释：一个圆划分为 2 个扇形，用 3 种颜色上色方案有“黑红，黑白，白红，白黑
+          描述给定一棵二叉树，找到两个节点的最近公共父节点(LCA)。
+最近公共祖先是两个节点的公共的祖先节点且具有最大深度。
+样例样例 1:    输入: 给定如下的一棵树，只有一个节点:    1
+LCA(1,1) = 1
+样例 2:    输入:  给如下的一颗树
+  4
+ / \
+3   7
+   / \
+  5   6
+
+LCA(3, 5) = `4`
+
+LCA(5, 6) = `7`
+
+LCA(
           ...
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2019/04/12/lintcode 染色问题/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-      <div>
-      
-      </div>
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://zeoya.github.io/2019/04/12/lintcode 最长回文子串/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="ZeoYa">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="ZeoYa's Home">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/04/12/lintcode 最长回文子串/" itemprop="url">'lintcode 最长回文子串'</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-04-12T23:45:25+08:00">
-                2019-04-12
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/algorithm/" itemprop="url" rel="index">
-                    <span itemprop="name">algorithm</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          描述给出一个字符串（假设长度最长为1000），求出它的最长回文子串，你可以假定只有一个满足条件的最长回文串。
-样例样例 1:
-输入:”abcdzdcab”输出:”cdzdc”样例 2:
-输入:”aba”输出:”aba”
-思考使用Manacher算法。在每个字符后面增加一个#号，使得所有的回文串都变成奇数长度，维护一个一维数组用来记录新的字符串中以每个字符为中心的回文串的长度/2 + 1，并且这个长
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2019/04/12/lintcode 最长回文子串/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-      <div>
-      
-      </div>
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://zeoya.github.io/2019/04/12/lintcode 树上最长距离/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="ZeoYa">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="ZeoYa's Home">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/04/12/lintcode 树上最长距离/" itemprop="url">'lintcode 树上最长距离'</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-04-12T23:45:25+08:00">
-                2019-04-12
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/algorithm/" itemprop="url" rel="index">
-                    <span itemprop="name">algorithm</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          lintcode 树上最长距离描述给出由n个结点，n-1条边组成的一棵树。求这棵树中距离最远的两个结点之间的距离。给出三个大小为n-1的数组starts,ends,lens,表示第i条边是从starts[i]连向ends[i]，长度为lens[i]的无向边。
-返回的是树上任意两个结点的最远距离，而不是树的深度，注意给定的边是无向边。题目保证给出的边一定能构成一棵树。
-1≤n≤1∗10^5​​​1≤
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2019/04/12/lintcode 树上最长距离/#more" rel="contents">
+            <a class="btn" href="/2019/04/12/lintcode 最近公共祖先/#more" rel="contents">
               Read more &raquo;
             </a>
           </div>
@@ -877,7 +578,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://zeoya.github.io/2019/04/12/lintcode 独特的电子邮件地址/">
+    <link itemprop="mainEntityOfPage" href="http://zeoya.github.io/2019/04/12/lintcode 有效的括号序列/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="ZeoYa">
@@ -896,7 +597,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2019/04/12/lintcode 独特的电子邮件地址/" itemprop="url">'lintcode 独特的电子邮件地址'</a></h1>
+                <a class="post-title-link" href="/2019/04/12/lintcode 有效的括号序列/" itemprop="url">'lintcode 有效的括号序列'</a></h1>
         
 
         <div class="post-meta">
@@ -970,14 +671,174 @@
       
         
           
-          描述每封电子邮件都由一个本地名称和一个域名组成，以 @ 符号分隔。
-例如，在 alice@lintcode.com中， alice 是本地名称，而 lintcode.com 是域名。
-除了小写字母，这些电子邮件还可能包含 ‘.’’ 或 ‘+’。
-如果在电子邮件地址的本地名称部分中的某些字符之间添加句点（’.’），则发往那里的邮件将会转发到本地名称中没有点的同一地址。例如，”alice.z@lint
+          描述给定一个字符串所表示的括号序列，包含以下字符： ‘(‘, ‘)’, ‘{‘, ‘}’, ‘[‘ and ‘]’， 判定是否是有效的括号序列。
+括号必须依照 “()” 顺序表示， “()[]{}” 是有效的括号，但 “([)]” 则是无效的括号。
+样例样例 1：
+输入：”([)]”输出：False样例 2：
+输入：”()[]{}”输出：True
+挑战O(n)的时间，n 为括号的个数。
+思路遍历字
           ...
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2019/04/12/lintcode 独特的电子邮件地址/#more" rel="contents">
+            <a class="btn" href="/2019/04/12/lintcode 有效的括号序列/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+      <div>
+      
+      </div>
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://zeoya.github.io/2019/04/12/lintcode 染色问题/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="ZeoYa">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ZeoYa's Home">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/04/12/lintcode 染色问题/" itemprop="url">'lintcode 染色问题'</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-04-12T23:45:25+08:00">
+                2019-04-12
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/algorithm/" itemprop="url" rel="index">
+                    <span itemprop="name">algorithm</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          lintcode 染色问题描述有一个圆形，分成n个扇形，用m种颜色给每个扇形染色，相邻扇形颜色不能相同。求方案总数。
+不考虑对称性。
+由于这个数可能很大，因此只需返回方案数模1e9 + 7。
+1≤n≤1051  1≤n≤10​^5​​
+1≤m≤1051 1≤m≤10​5​^5
+样例给定n = 2，m = 3，返回6。
+解释：一个圆划分为 2 个扇形，用 3 种颜色上色方案有“黑红，黑白，白红，白黑
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/04/12/lintcode 染色问题/#more" rel="contents">
               Read more &raquo;
             </a>
           </div>
@@ -1186,7 +1047,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://zeoya.github.io/2019/04/12/lintcode 硬币排成线/">
+    <link itemprop="mainEntityOfPage" href="http://zeoya.github.io/2019/04/12/lintcode 树上最长距离/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="ZeoYa">
@@ -1205,7 +1066,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2019/04/12/lintcode 硬币排成线/" itemprop="url">'lintcode 硬币排成线'</a></h1>
+                <a class="post-title-link" href="/2019/04/12/lintcode 树上最长距离/" itemprop="url">'lintcode 树上最长距离'</a></h1>
         
 
         <div class="post-meta">
@@ -1279,15 +1140,13 @@
       
         
           
-          描述有 n 个硬币排成一条线。两个参赛者轮流从右边依次拿走 1 或 2 个硬币，直到没有硬币为止。拿到最后一枚硬币的人获胜。
-请判定 先手玩家 必胜还是必败?
-若必胜, 返回 true, 否则返回 false.
-样例输入: 4输出: true解释:先手玩家第一轮拿走一个硬币, 此时还剩三个.这时无论后手玩家拿一个还是两个, 下一次先手玩家都可以把剩下的硬币拿完.
-挑战O(1) 时间复杂度且O(1)
+          lintcode 树上最长距离描述给出由n个结点，n-1条边组成的一棵树。求这棵树中距离最远的两个结点之间的距离。给出三个大小为n-1的数组starts,ends,lens,表示第i条边是从starts[i]连向ends[i]，长度为lens[i]的无向边。
+返回的是树上任意两个结点的最远距离，而不是树的深度，注意给定的边是无向边。题目保证给出的边一定能构成一棵树。
+1≤n≤1∗10^5​​​1≤
           ...
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2019/04/12/lintcode 硬币排成线/#more" rel="contents">
+            <a class="btn" href="/2019/04/12/lintcode 树上最长距离/#more" rel="contents">
               Read more &raquo;
             </a>
           </div>
@@ -1495,162 +1354,6 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://zeoya.github.io/2019/04/12/lintcode 硬币排成线2/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="ZeoYa">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="ZeoYa's Home">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/04/12/lintcode 硬币排成线2/" itemprop="url">'lintcode 硬币排成线2'</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-04-12T23:45:25+08:00">
-                2019-04-12
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/algorithm/" itemprop="url" rel="index">
-                    <span itemprop="name">algorithm</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          描述有 n 个不同价值的硬币排成一条线。两个参赛者轮流从 左边 依次拿走 1 或 2 个硬币，直到没有硬币为止。计算两个人分别拿到的硬币总价值，价值高的人获胜。
-请判定 先手玩家 必胜还是必败?
-若必胜, 返回 true, 否则返回 false.
-样例样例 1:
-输入: [1, 2, 2]输出: true解释: 先手玩家直接拿走两颗硬币即可.样例 2:
-输入: [1, 2, 4]输出: false
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2019/04/12/lintcode 硬币排成线2/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-      <div>
-      
-      </div>
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://zeoya.github.io/2019/04/12/lintcode 滑动拼图/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1792,6 +1495,317 @@ board 会以上面讲的 2 x 3 大小的数组形式输入 。board[i][j] 会是
 
 
     
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://zeoya.github.io/2019/04/12/lintcode 独特的电子邮件地址/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="ZeoYa">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ZeoYa's Home">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/04/12/lintcode 独特的电子邮件地址/" itemprop="url">'lintcode 独特的电子邮件地址'</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-04-12T23:45:25+08:00">
+                2019-04-12
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/algorithm/" itemprop="url" rel="index">
+                    <span itemprop="name">algorithm</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          描述每封电子邮件都由一个本地名称和一个域名组成，以 @ 符号分隔。
+例如，在 alice@lintcode.com中， alice 是本地名称，而 lintcode.com 是域名。
+除了小写字母，这些电子邮件还可能包含 ‘.’’ 或 ‘+’。
+如果在电子邮件地址的本地名称部分中的某些字符之间添加句点（’.’），则发往那里的邮件将会转发到本地名称中没有点的同一地址。例如，”alice.z@lint
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/04/12/lintcode 独特的电子邮件地址/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+      <div>
+      
+      </div>
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://zeoya.github.io/2019/04/12/lintcode 硬币排成线3/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="ZeoYa">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ZeoYa's Home">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/04/12/lintcode 硬币排成线3/" itemprop="url">'lintcode 硬币排成线3'</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-04-12T23:45:25+08:00">
+                2019-04-12
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/algorithm/" itemprop="url" rel="index">
+                    <span itemprop="name">algorithm</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          描述有 n 个硬币排成一条线，每一枚硬币有不同的价值。两个参赛者轮流从任意一边取一枚硬币，知道没有硬币为止。计算拿到的硬币总价值，价值最高的获胜。
+请判定 第一个玩家 是输还是赢？
+样例给定数组 A = [3,2,2], 返回 true.
+给定数组 A = [1,2,4], 返回 true.
+给定数组 A = [1,20,4], 返回 false.
+挑战Follow Up Question:
+If
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/04/12/lintcode 硬币排成线3/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+      <div>
+      
+      </div>
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
   </section>
 
   
@@ -1844,7 +1858,7 @@ board 会以上面讲的 2 x 3 大小的数组形式输入 。board[i][j] 会是
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">63</span>
+                  <span class="site-state-item-count">64</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -1855,7 +1869,7 @@ board 会以上面讲的 2 x 3 大小的数组形式输入 。board[i][j] 会是
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">categories</span>
                 </a>
               </div>

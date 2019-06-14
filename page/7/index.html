@@ -259,6 +259,160 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://zeoya.github.io/2019/04/12/lintcode 邮局的建立/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="ZeoYa">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ZeoYa's Home">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/04/12/lintcode 邮局的建立/" itemprop="url">'lintcode 邮局的建立'</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-04-12T23:45:25+08:00">
+                2019-04-12
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/algorithm/" itemprop="url" rel="index">
+                    <span itemprop="name">algorithm</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          描述给出一个二维的网格，每一个格子上用 1 表示房子，0 表示空。要求在网格中，找到一个空地建立邮局，使得邮局到所有的房子的距离和最小。返回所有房子到邮局的最小距离和，如果不可能建邮局则返回-1。
+样例给出一个网格
+0 1 0 01 0 1 10 1 0 0返回 6 (把邮局设立在(1,1)这个位置时，邮局离所有的房子的距离是最近的)。
+思考可以抽象为一个垂直方向和一个水平方向的房子数量。用数组h
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/04/12/lintcode 邮局的建立/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+      <div>
+      
+      </div>
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://zeoya.github.io/2019/04/12/lintcode 链表倒数第n个节点/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -567,7 +721,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://zeoya.github.io/2019/04/12/lintcode 骑士的最短路线/">
+    <link itemprop="mainEntityOfPage" href="http://zeoya.github.io/2019/04/12/lintcode 打劫房屋/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="ZeoYa">
@@ -586,7 +740,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2019/04/12/lintcode 骑士的最短路线/" itemprop="url">'lintcode 骑士的最短路线'</a></h1>
+                <a class="post-title-link" href="/2019/04/12/lintcode 打劫房屋/" itemprop="url">'lintcode 打劫房屋'</a></h1>
         
 
         <div class="post-meta">
@@ -660,13 +814,14 @@
       
         
           
-          描述给定骑士在棋盘上的 初始 位置(一个2进制矩阵 0 表示空 1 表示有障碍物)，找到到达 终点 的最短路线，返回路线的长度。如果骑士不能到达则返回 -1 。
-说明如果骑士的位置为 (x,y)，他下一步可以到达以下这些位置:
-(x + 1, y + 2)(x + 1, y - 2)(x - 1, y + 2)(x - 1, y - 2)(x + 2, y + 1)(x + 2, y - 1)(x
+          描述假设你是一个专业的窃贼，准备沿着一条街打劫房屋。每个房子都存放着特定金额的钱。你面临的唯一约束条件是：相邻的房子装着相互联系的防盗系统，且 当相邻的两个房子同一天被打劫时，该系统会自动报警。
+给定一个非负整数列表，表示每个房子中存放的钱， 算一算，如果今晚去打劫，在不触动报警装置的情况下, 你最多可以得到多少钱 。
+样例样例 1:
+输入: [3, 8, 4]输出: 8解释: 仅仅打劫第二个房子
           ...
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2019/04/12/lintcode 骑士的最短路线/#more" rel="contents">
+            <a class="btn" href="/2019/04/12/lintcode 打劫房屋/#more" rel="contents">
               Read more &raquo;
             </a>
           </div>
@@ -759,7 +914,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">63</span>
+                  <span class="site-state-item-count">64</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -770,7 +925,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">categories</span>
                 </a>
               </div>
