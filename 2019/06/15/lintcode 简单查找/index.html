@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="string,">
+  <meta name="keywords" content="array,">
 
 
 
@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="@TOC 描述给出一个字符串s，表示小说的内容，再给出一个list表示这些单词不参加统计，求字符串中出现频率最高的单词(如果有多个，返回字典序最小的那个) 样例输入: s = “Jimmy has an apple, it is on the table, he like it”excludeWords = [“a”,”an”,”the”]输出:”it” 思考使用map，记录每个不在list中的单">
-<meta name="keywords" content="string">
+<meta name="description" content="描述对于两个数组，第一个数组可能包含可重复的整数，第二个数组是第一个数组的子集。返回的数组的长度与第二个数组相同。对于第二个数组中的每个元素a，第一个数组中有多少个数字&amp;lt;=a。 样例1输入：nums = [3, 2, 4, 3, 5, 1]，sub = [2, 4]输出：[2, 5]解释：&amp;lt;=2的数字[1,2]，&amp;lt;=4的数字[1,2,3,3,4] 2输入：nums = [3, 1">
+<meta name="keywords" content="array">
 <meta property="og:type" content="article">
-<meta property="og:title" content="&#39;lintcode 频率最高的词&#39;">
-<meta property="og:url" content="http://zeoya.github.io/2019/04/12/lintcode 频率最高的词/index.html">
+<meta property="og:title" content="lintcode 简单查找">
+<meta property="og:url" content="http://zeoya.github.io/2019/06/15/lintcode 简单查找/index.html">
 <meta property="og:site_name" content="ZeoYa&#39;s Home">
-<meta property="og:description" content="@TOC 描述给出一个字符串s，表示小说的内容，再给出一个list表示这些单词不参加统计，求字符串中出现频率最高的单词(如果有多个，返回字典序最小的那个) 样例输入: s = “Jimmy has an apple, it is on the table, he like it”excludeWords = [“a”,”an”,”the”]输出:”it” 思考使用map，记录每个不在list中的单">
+<meta property="og:description" content="描述对于两个数组，第一个数组可能包含可重复的整数，第二个数组是第一个数组的子集。返回的数组的长度与第二个数组相同。对于第二个数组中的每个元素a，第一个数组中有多少个数字&amp;lt;=a。 样例1输入：nums = [3, 2, 4, 3, 5, 1]，sub = [2, 4]输出：[2, 5]解释：&amp;lt;=2的数字[1,2]，&amp;lt;=4的数字[1,2,3,3,4] 2输入：nums = [3, 1">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-04-13T06:09:01.802Z">
+<meta property="og:updated_time" content="2019-06-15T01:51:17.408Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="&#39;lintcode 频率最高的词&#39;">
-<meta name="twitter:description" content="@TOC 描述给出一个字符串s，表示小说的内容，再给出一个list表示这些单词不参加统计，求字符串中出现频率最高的单词(如果有多个，返回字典序最小的那个) 样例输入: s = “Jimmy has an apple, it is on the table, he like it”excludeWords = [“a”,”an”,”the”]输出:”it” 思考使用map，记录每个不在list中的单">
+<meta name="twitter:title" content="lintcode 简单查找">
+<meta name="twitter:description" content="描述对于两个数组，第一个数组可能包含可重复的整数，第二个数组是第一个数组的子集。返回的数组的长度与第二个数组相同。对于第二个数组中的每个元素a，第一个数组中有多少个数字&amp;lt;=a。 样例1输入：nums = [3, 2, 4, 3, 5, 1]，sub = [2, 4]输出：[2, 5]解释：&amp;lt;=2的数字[1,2]，&amp;lt;=4的数字[1,2,3,3,4] 2输入：nums = [3, 1">
 
 
 
@@ -120,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://zeoya.github.io/2019/04/12/lintcode 频率最高的词/">
+  <link rel="canonical" href="http://zeoya.github.io/2019/06/15/lintcode 简单查找/">
 
 
 
 
 
-  <title>'lintcode 频率最高的词' | ZeoYa's Home</title>
+  <title>lintcode 简单查找 | ZeoYa's Home</title>
   
 
 
@@ -263,7 +263,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://zeoya.github.io/2019/04/12/lintcode 频率最高的词/">
+    <link itemprop="mainEntityOfPage" href="http://zeoya.github.io/2019/06/15/lintcode 简单查找/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="ZeoYa">
@@ -280,7 +280,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">'lintcode 频率最高的词'</h1>
+          <h1 class="post-title" itemprop="name headline">lintcode 简单查找</h1>
         
 
         <div class="post-meta">
@@ -292,8 +292,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-04-12T23:45:25+08:00">
-                2019-04-12
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-06-15T09:44:36+08:00">
+                2019-06-15
               </time>
             
 
@@ -352,11 +352,14 @@
       
 
       
-        <p>@<a href="lintcode 频率最高的词">TOC</a></p>
-<h1 id="描述"><a href="#描述" class="headerlink" title="描述"></a>描述</h1><p>给出一个字符串s，表示小说的内容，再给出一个list表示这些单词不参加统计，求字符串中出现频率最高的单词(如果有多个，返回字典序最小的那个)</p>
-<h1 id="样例"><a href="#样例" class="headerlink" title="样例"></a>样例</h1><p>输入: s = “Jimmy has an apple, it is on the table, he like it”<br>excludeWords = [“a”,”an”,”the”]<br>输出:”it”</p>
-<h1 id="思考"><a href="#思考" class="headerlink" title="思考"></a>思考</h1><p>使用map，记录每个不在list中的单词出现的次数，遍历这个map，得到出现次数最多的。</p>
-<h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    /**</span><br><span class="line">     * @param s: a string</span><br><span class="line">     * @param excludewords: a dict</span><br><span class="line">     * @return: the most frequent word</span><br><span class="line">     */</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    string frequentWord(string &amp;s, unordered_set&lt;string&gt; &amp;excludewords) &#123;</span><br><span class="line">        // Write your code here</span><br><span class="line">        map&lt;string, int&gt; res;</span><br><span class="line">        int j = 0;</span><br><span class="line">        for (int i = 0; i &lt; s.length(); i++) &#123;</span><br><span class="line">            if (s[i] == &apos; &apos; || s[i] == &apos;,&apos;)&#123;</span><br><span class="line">                string temp = s.substr(j, i-j);</span><br><span class="line">                j = i+1;</span><br><span class="line">                if (s[j] == &apos; &apos;)</span><br><span class="line">                    j++;</span><br><span class="line">                if (excludewords.find(temp) == excludewords.end())</span><br><span class="line">                    res[temp]++;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        string temp = s.substr(j, s.length() - j);</span><br><span class="line">	    if (excludewords.find(temp) == excludewords.end())</span><br><span class="line">		    res[temp]++;</span><br><span class="line">        int M = INT_MIN;</span><br><span class="line">        string R;</span><br><span class="line">        map&lt;string, int&gt;::iterator it = res.begin();</span><br><span class="line">        while (it != res.end()) &#123;</span><br><span class="line">            if (it-&gt;second &gt; M) &#123;</span><br><span class="line">                M = it-&gt;second;</span><br><span class="line">                R = it-&gt;first;</span><br><span class="line">            &#125;</span><br><span class="line">            it++;</span><br><span class="line">        &#125;</span><br><span class="line">        return R;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+        <h1 id="描述"><a href="#描述" class="headerlink" title="描述"></a>描述</h1><p>对于两个数组，第一个数组可能包含可重复的整数，第二个数组是第一个数组的子集。返回的数组的长度与第二个数组相同。对于第二个数组中的每个元素a，第一个数组中有多少个数字&lt;=a。</p>
+<h1 id="样例"><a href="#样例" class="headerlink" title="样例"></a>样例</h1><h2 id="1"><a href="#1" class="headerlink" title="1"></a>1</h2><p>输入：nums = [3, 2, 4, 3, 5, 1]，sub = [2, 4]<br>输出：[2, 5]<br>解释：&lt;=2的数字[1,2]，&lt;=4的数字[1,2,3,3,4]</p>
+<h2 id="2"><a href="#2" class="headerlink" title="2"></a>2</h2><p>输入：nums = [3, 1, 2, 3, 3, 1]，sub = [1,3]<br>输出：[2,6]<br>解释：&lt;=1的数字[1,1]，&lt;=3的数字[1,1,2,3,3,3]</p>
+<h1 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h1><p>两种方法</p>
+<h2 id="1-1"><a href="#1-1" class="headerlink" title="1"></a>1</h2><p>暴力的遍历两个数组</p>
+<h2 id="2-1"><a href="#2-1" class="headerlink" title="2"></a>2</h2><p>将第一个数组排序，然后使用upper_bound函数计算小于等于sub数组中的数</p>
+<h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1><h2 id="1-2"><a href="#1-2" class="headerlink" title="1"></a>1</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    /**</span><br><span class="line">     * @param nums:</span><br><span class="line">     * @param sub:</span><br><span class="line">     * @return: return a Integer array</span><br><span class="line">     */</span><br><span class="line">    vector&lt;int&gt; SimpleQueries (vector&lt;int&gt; &amp;nums, vector&lt;int&gt; &amp;sub) &#123;</span><br><span class="line">        // write your code here</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        vector&lt;int&gt; res;</span><br><span class="line">        for (int i = 0; i &lt; sub.size(); i++)&#123;</span><br><span class="line">            int temp = sub[i];</span><br><span class="line">            int n = 0;</span><br><span class="line">            for (int j = 0; j &lt; nums.size(); j++) &#123;</span><br><span class="line">                if (temp &gt;= nums[j])</span><br><span class="line">                    n++;</span><br><span class="line">            &#125;</span><br><span class="line">            res.push_back(n);</span><br><span class="line">        &#125;</span><br><span class="line">        return res;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<h2 id="2-2"><a href="#2-2" class="headerlink" title="2"></a>2</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">class Solution</span><br><span class="line">&#123;</span><br><span class="line">public:</span><br><span class="line">    /**</span><br><span class="line">     * @param nums:</span><br><span class="line">     * @param sub:</span><br><span class="line">     * @return: return a Integer array</span><br><span class="line">     */</span><br><span class="line">    vector&lt;int&gt; SimpleQueries (vector&lt;int&gt; &amp;nums, vector&lt;int&gt; &amp;sub)</span><br><span class="line">    &#123;</span><br><span class="line">        sort(nums.begin(), nums.end());</span><br><span class="line">        vector&lt;int&gt; res;</span><br><span class="line">        for(int i; i &lt; sub.size(); i++) &#123;</span><br><span class="line">            int s = sub[i];</span><br><span class="line">            res.push_back(upper_bound(nums.begin(), nums.end(), s) - nums.begin());</span><br><span class="line">        &#125;</span><br><span class="line">        return res;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 
       
       <div>
@@ -384,7 +387,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/string/" rel="tag"># string</a>
+            <a href="/tags/array/" rel="tag"># array</a>
           
         </div>
       
@@ -397,8 +400,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/04/12/lintcode 打劫房屋2/" rel="next" title="'lintcode 打劫房屋2'">
-                <i class="fa fa-chevron-left"></i> 'lintcode 打劫房屋2'
+              <a href="/2019/06/14/lintccode 二进制升序排序/" rel="next" title="lintcode 二进制升序排序">
+                <i class="fa fa-chevron-left"></i> lintcode 二进制升序排序
               </a>
             
           </div>
@@ -407,8 +410,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/04/12/lintcode 链表倒数第n个节点/" rel="prev" title="'lintcode 链表倒数第n个节点'">
-                'lintcode 链表倒数第n个节点' <i class="fa fa-chevron-right"></i>
+              <a href="/2019/06/16/lintcode 解码方法/" rel="prev" title="lintcode 解码方法">
+                lintcode 解码方法 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -543,7 +546,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#描述"><span class="nav-number">1.</span> <span class="nav-text">描述</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#样例"><span class="nav-number">2.</span> <span class="nav-text">样例</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#思考"><span class="nav-number">3.</span> <span class="nav-text">思考</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#代码"><span class="nav-number">4.</span> <span class="nav-text">代码</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#描述"><span class="nav-number">1.</span> <span class="nav-text">描述</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#样例"><span class="nav-number">2.</span> <span class="nav-text">样例</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1"><span class="nav-number">2.1.</span> <span class="nav-text">1</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2"><span class="nav-number">2.2.</span> <span class="nav-text">2</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#思路"><span class="nav-number">3.</span> <span class="nav-text">思路</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-1"><span class="nav-number">3.1.</span> <span class="nav-text">1</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-1"><span class="nav-number">3.2.</span> <span class="nav-text">2</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#代码"><span class="nav-number">4.</span> <span class="nav-text">代码</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-2"><span class="nav-number">4.1.</span> <span class="nav-text">1</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-2"><span class="nav-number">4.2.</span> <span class="nav-text">2</span></a></li></ol></li></ol></div>
             
 
           </div>
