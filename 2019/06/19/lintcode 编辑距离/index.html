@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="b-tree,">
+  <meta name="keywords" content="dynamic programming,">
 
 
 
@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="lintcode 二叉树的某层结点之和描述给出一棵二叉树和一个整数代表树的某层深度。计算二叉树的某层节点之和。 样例输入：{1,2,3,4,5,6,7,#,#,8,#,#,#,#,9},2输出：5解释：     1   /   \  2     3 / \   / \4   5 6   7   /       \  8         92+3=5 思路使用递归，减少层数，直到为根 代码12345">
-<meta name="keywords" content="b-tree">
+<meta name="description" content="描述给出两个单词word1和word2，计算出将word1 转换为word2的最少操作次数。 你总共三种操作方法： 插入一个字符删除一个字符替换一个字符 样例1输入:“horse”“ros”输出: 3解释:horse -&amp;gt; rorse (替换 ‘h’ 为 ‘r’)rorse -&amp;gt; rose (删除 ‘r’)rose -&amp;gt; ros (删除 ‘e’) 2输入:“intention”“">
+<meta name="keywords" content="dynamic programming">
 <meta property="og:type" content="article">
-<meta property="og:title" content="&#39;lintcode 二叉树的某层结点之和&#39;">
-<meta property="og:url" content="http://zeoya.github.io/2019/06/05/1/index.html">
+<meta property="og:title" content="lintcode 编辑距离">
+<meta property="og:url" content="http://zeoya.github.io/2019/06/19/lintcode 编辑距离/index.html">
 <meta property="og:site_name" content="ZeoYa&#39;s Home">
-<meta property="og:description" content="lintcode 二叉树的某层结点之和描述给出一棵二叉树和一个整数代表树的某层深度。计算二叉树的某层节点之和。 样例输入：{1,2,3,4,5,6,7,#,#,8,#,#,#,#,9},2输出：5解释：     1   /   \  2     3 / \   / \4   5 6   7   /       \  8         92+3=5 思路使用递归，减少层数，直到为根 代码12345">
+<meta property="og:description" content="描述给出两个单词word1和word2，计算出将word1 转换为word2的最少操作次数。 你总共三种操作方法： 插入一个字符删除一个字符替换一个字符 样例1输入:“horse”“ros”输出: 3解释:horse -&amp;gt; rorse (替换 ‘h’ 为 ‘r’)rorse -&amp;gt; rose (删除 ‘r’)rose -&amp;gt; ros (删除 ‘e’) 2输入:“intention”“">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-06-05T01:53:58.153Z">
+<meta property="og:updated_time" content="2019-06-19T05:22:39.639Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="&#39;lintcode 二叉树的某层结点之和&#39;">
-<meta name="twitter:description" content="lintcode 二叉树的某层结点之和描述给出一棵二叉树和一个整数代表树的某层深度。计算二叉树的某层节点之和。 样例输入：{1,2,3,4,5,6,7,#,#,8,#,#,#,#,9},2输出：5解释：     1   /   \  2     3 / \   / \4   5 6   7   /       \  8         92+3=5 思路使用递归，减少层数，直到为根 代码12345">
+<meta name="twitter:title" content="lintcode 编辑距离">
+<meta name="twitter:description" content="描述给出两个单词word1和word2，计算出将word1 转换为word2的最少操作次数。 你总共三种操作方法： 插入一个字符删除一个字符替换一个字符 样例1输入:“horse”“ros”输出: 3解释:horse -&amp;gt; rorse (替换 ‘h’ 为 ‘r’)rorse -&amp;gt; rose (删除 ‘r’)rose -&amp;gt; ros (删除 ‘e’) 2输入:“intention”“">
 
 
 
@@ -120,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://zeoya.github.io/2019/06/05/1/">
+  <link rel="canonical" href="http://zeoya.github.io/2019/06/19/lintcode 编辑距离/">
 
 
 
 
 
-  <title>'lintcode 二叉树的某层结点之和' | ZeoYa's Home</title>
+  <title>lintcode 编辑距离 | ZeoYa's Home</title>
   
 
 
@@ -263,7 +263,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://zeoya.github.io/2019/06/05/1/">
+    <link itemprop="mainEntityOfPage" href="http://zeoya.github.io/2019/06/19/lintcode 编辑距离/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="ZeoYa">
@@ -280,7 +280,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">'lintcode 二叉树的某层结点之和'</h1>
+          <h1 class="post-title" itemprop="name headline">lintcode 编辑距离</h1>
         
 
         <div class="post-meta">
@@ -292,8 +292,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-06-05T09:50:19+08:00">
-                2019-06-05
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-06-19T12:11:36+08:00">
+                2019-06-19
               </time>
             
 
@@ -352,10 +352,19 @@
       
 
       
-        <h1 id="lintcode-二叉树的某层结点之和"><a href="#lintcode-二叉树的某层结点之和" class="headerlink" title="lintcode 二叉树的某层结点之和"></a>lintcode 二叉树的某层结点之和</h1><h2 id="描述"><a href="#描述" class="headerlink" title="描述"></a>描述</h2><p>给出一棵二叉树和一个整数代表树的某层深度。<br>计算二叉树的某层节点之和。</p>
-<h2 id="样例"><a href="#样例" class="headerlink" title="样例"></a>样例</h2><p>输入：{1,2,3,4,5,6,7,#,#,8,#,#,#,#,9},2<br>输出：5<br>解释：<br>     1<br>   /   \<br>  2     3<br> / \   / \<br>4   5 6   7<br>   /       \<br>  8         9<br>2+3=5</p>
-<h2 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h2><p>使用递归，减少层数，直到为根</p>
-<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Definition of TreeNode:</span></span><br><span class="line"><span class="comment"> * class TreeNode &#123;</span></span><br><span class="line"><span class="comment"> * public:</span></span><br><span class="line"><span class="comment"> *     int val;</span></span><br><span class="line"><span class="comment"> *     TreeNode *left, *right;</span></span><br><span class="line"><span class="comment"> *     TreeNode(int val) &#123;</span></span><br><span class="line"><span class="comment"> *         this-&gt;val = val;</span></span><br><span class="line"><span class="comment"> *         this-&gt;left = this-&gt;right = NULL;</span></span><br><span class="line"><span class="comment"> *     &#125;</span></span><br><span class="line"><span class="comment"> * &#125;</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * @param root: the root of the binary tree</span></span><br><span class="line"><span class="comment">     * @param level: the depth of the target level</span></span><br><span class="line"><span class="comment">     * @return: An integer</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">levelSum</span><span class="params">(TreeNode * root, <span class="keyword">int</span> level)</span> </span>&#123;</span><br><span class="line">        <span class="comment">// write your code here</span></span><br><span class="line">        <span class="keyword">if</span> (root == <span class="literal">NULL</span>)</span><br><span class="line">            <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span> (level == <span class="number">1</span>)</span><br><span class="line">            <span class="keyword">return</span> root-&gt;val;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">            <span class="keyword">return</span> levelSum(root-&gt;left, level<span class="number">-1</span>)+levelSum(root-&gt;right, level<span class="number">-1</span>);</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+        <h1 id="描述"><a href="#描述" class="headerlink" title="描述"></a>描述</h1><p>给出两个单词word1和word2，计算出将word1 转换为word2的最少操作次数。</p>
+<p>你总共三种操作方法：</p>
+<p>插入一个字符<br>删除一个字符<br>替换一个字符</p>
+<h1 id="样例"><a href="#样例" class="headerlink" title="样例"></a>样例</h1><h2 id="1"><a href="#1" class="headerlink" title="1"></a>1</h2><p>输入:<br>“horse”<br>“ros”<br>输出: 3<br>解释:<br>horse -&gt; rorse (替换 ‘h’ 为 ‘r’)<br>rorse -&gt; rose (删除 ‘r’)<br>rose -&gt; ros (删除 ‘e’)</p>
+<h2 id="2"><a href="#2" class="headerlink" title="2"></a>2</h2><p>输入:<br>“intention”<br>“execution”<br>输出: 5<br>解释:<br>intention -&gt; inention (删除 ‘t’)<br>inention -&gt; enention (替换 ‘i’ 为 ‘e’)<br>enention -&gt; exention (替换 ‘n’ 为 ‘x’)<br>exention -&gt; exection (替换 ‘n’ 为 ‘c’)<br>exection -&gt; execution (插入 ‘u’)</p>
+<h1 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h1><p>动态规划<br>设dp[i][j]表示 word1前i个字符转换为word2前j个字符所需要的操作数<br>初始状态    dp[0][j] (0&lt;=j&lt;=word2.length()) = j<br>           dp[i][0] (0&lt;=i&lt;=word1.length()) = i</p>
+<p>关系式   对于任意状态下的dp[i][j]可以由三种方式得出</p>
+<pre><code>1. 如果word1[i] == word2[j]，此时从word1转换为word2 和 dp[i-1][j-1]相同，如： hors转换为ros 与hor和ro相同，s不需要管
+2. 如果不相等，此时分为三种方式
+  2.1 把word1[i]替换为word2[j] 1+dp[i-1][j-1]   如：horse转换为ros 多一步 e转换为s
+  2.2 删掉word1[i] 1+dp[i-1][j] 如：horse转换为ros 比较 hors 转换为 ros 只需要插入一个e
+  2.3 删除word2[j] 1+dp[i-1][j] 同2.2
+</code></pre><h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * @param word1: A string</span></span><br><span class="line"><span class="comment">     * @param word2: A string</span></span><br><span class="line"><span class="comment">     * @return: The minimum number of steps.</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">minDistance</span><span class="params">(<span class="built_in">string</span> &amp;word1, <span class="built_in">string</span> &amp;word2)</span> </span>&#123;</span><br><span class="line">        <span class="comment">// write your code here</span></span><br><span class="line">        <span class="keyword">if</span> (word1.length() == <span class="number">0</span> || word2.length() == <span class="number">0</span>)</span><br><span class="line">            <span class="keyword">return</span> max(word1.length(), word2.length());</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        <span class="built_in">vector</span>&lt;<span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt;&gt; dp(word1.length()+<span class="number">1</span>, <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt;(word2.length()+<span class="number">1</span>, <span class="number">0</span>));</span><br><span class="line">        <span class="comment">// dp[i][j] word1:i  word2:j</span></span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt;= word2.length(); j++)</span><br><span class="line">            dp[<span class="number">0</span>][j] = j;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt;= word1.length(); i++)</span><br><span class="line">            dp[i][<span class="number">0</span>] = i;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= word1.length();i++) &#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">1</span>; j &lt;= word2.length(); j++)&#123;</span><br><span class="line"></span><br><span class="line">                <span class="keyword">if</span> (word1[i<span class="number">-1</span>] == word2[j<span class="number">-1</span>])</span><br><span class="line">                    dp[i][j] = min(<span class="number">1</span>+dp[i][j<span class="number">-1</span>],dp[i<span class="number">-1</span>][j<span class="number">-1</span>]);</span><br><span class="line">                <span class="keyword">else</span></span><br><span class="line">                    dp[i][j] = min(<span class="number">1</span>+dp[i][j<span class="number">-1</span>], min(<span class="number">1</span>+dp[i<span class="number">-1</span>][j], <span class="number">1</span>+dp[i<span class="number">-1</span>][j<span class="number">-1</span>]));</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> dp[word1.length()][word2.length()];</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 
       
       <div>
@@ -383,7 +392,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/b-tree/" rel="tag"># b-tree</a>
+            <a href="/tags/dynamic-programming/" rel="tag"># dynamic programming</a>
           
         </div>
       
@@ -396,8 +405,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/05/03/lintcode 旋转字符串II/" rel="next" title="lintcode 旋转字符串II">
-                <i class="fa fa-chevron-left"></i> lintcode 旋转字符串II
+              <a href="/2019/06/18/lintcode 输出赛程表/" rel="next" title="lintcode 输出赛程表">
+                <i class="fa fa-chevron-left"></i> lintcode 输出赛程表
               </a>
             
           </div>
@@ -405,6 +414,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/06/20/lintcode 单词接龙/" rel="prev" title="lintcode 单词接龙">
+                lintcode 单词接龙 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -483,7 +496,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">61</span>
+                  <span class="site-state-item-count">71</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -494,7 +507,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">categories</span>
                 </a>
               </div>
@@ -505,7 +518,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">10</span>
+                  <span class="site-state-item-count">11</span>
                   <span class="site-state-item-name">tags</span>
                 </a>
               </div>
@@ -538,7 +551,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#lintcode-二叉树的某层结点之和"><span class="nav-number">1.</span> <span class="nav-text">lintcode 二叉树的某层结点之和</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#描述"><span class="nav-number">1.1.</span> <span class="nav-text">描述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#样例"><span class="nav-number">1.2.</span> <span class="nav-text">样例</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#思路"><span class="nav-number">1.3.</span> <span class="nav-text">思路</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#代码"><span class="nav-number">1.4.</span> <span class="nav-text">代码</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#描述"><span class="nav-number">1.</span> <span class="nav-text">描述</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#样例"><span class="nav-number">2.</span> <span class="nav-text">样例</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1"><span class="nav-number">2.1.</span> <span class="nav-text">1</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2"><span class="nav-number">2.2.</span> <span class="nav-text">2</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#思路"><span class="nav-number">3.</span> <span class="nav-text">思路</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#代码"><span class="nav-number">4.</span> <span class="nav-text">代码</span></a></li></ol></div>
             
 
           </div>
